@@ -11,7 +11,8 @@ export default {
       'offwhite': '#FFF5F5',
       'iconpink': '#FFA9A9',
       'iconyellow': '#FFFA81',
-      'iconblue': '#7C91FF'
+      'iconblue': '#7C91FF',
+      'grey':'#FFFFFF',
     },
     extend: {
       backgroundImage: {
