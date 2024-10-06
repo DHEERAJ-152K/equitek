@@ -4,7 +4,7 @@ const Products = () => {
   return (
     <div>
           <h2>Products</h2>
-          <div className='flex'>
+          <div className='flex w-screen'>
               <div className=' w-1/2 bg-black'>
                   <img src="/products/htc-vive-cosmic-vr.svg" alt="product" />
                   <h2>HTC Vive Cosmic VR</h2>

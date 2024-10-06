@@ -14,7 +14,7 @@ function App() {
       <Navbar />
       <Home />
       <Card />
-      <Products />
+      {/* <Products /> */}
       <Experience />
       <Explore />
       <Footer />

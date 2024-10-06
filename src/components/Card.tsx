@@ -2,7 +2,7 @@ import React from "react";
 
 const Card = () => {
   return (
-    <div className=" bg-offwhite rounded-l-3xl text-black  text-left flex flex-wrap justify-between px-[4.5rem] py-10 ml-10">
+    <div className="border bg-offwhite mt-[7rem] rounded-l-3xl text-black  text-left flex flex-wrap justify-between px-[4.5rem] py-10 md:ml-10 gap-10">
 
       <div className=" grid gap-5  max-w-60 ">
         <img  className=" bg-iconpink rounded-lg p-2 w-12 shadow-shadowpink" src="/speed.svg" alt="icon" />
