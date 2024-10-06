@@ -18,7 +18,7 @@ export default {
     },
     extend: {
       backgroundImage: {
-        'vector1': "url('/Vector1.svg')",
+        vector1: "url('/Vector1.svg')",
       },
       backgroundImage: {
         'footer-gradient': 'linear-gradient(180deg, #4A008F 0%, rgba(74, 0, 143, 0) 100%)',

@@ -7,6 +7,7 @@ import Footer from './components/Footer'
 import Explore from './components/Explore'
 import Products from './components/Products'
 
+
 function App() {
 
   return (
@@ -14,7 +15,7 @@ function App() {
       <Navbar />
       <Home />
       <Card />
-      {/* <Products /> */}
+      <Products />
       <Experience />
       <Explore />
       <Footer />
