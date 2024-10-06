@@ -1,7 +1,7 @@
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between mx-[25px]">
+    <div className="flex justify-between p-10">
       <div className="flex gap-[11px]">
         <img
           className=" w-[39px] md:w-[58px] h-[38px] "

@@ -44,6 +44,7 @@ const Products: React.FC = () => {
   // Slider configuration
   const settings: Settings = {
     dots: false,
+    arrows: false,
     infinite: true,
     speed: 1000,
     slidesToShow: 4,
@@ -77,7 +78,8 @@ const Products: React.FC = () => {
     <div className="mt-10 ">
       <h2 className="font-bold w-fit m-5 text-lg text-start ">
         Products
-        <svg className=" translate-x-2"
+        <svg
+          className=" translate-x-2"
           width="63"
           height="4"
           viewBox="0 0 63 4"

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 
 const Explore = () => {
   const [picture, setPicture] = useState<string>("Gaming.svg");
