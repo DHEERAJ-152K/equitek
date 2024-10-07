@@ -1,50 +1,30 @@
-# React + TypeScript + Vite
+# **EquiTek**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Website for VR Devices** built with **Vite.js** and **TypeScript**.
 
-Currently, two official plugins are available:
+## **Tech Stack Used**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Vite.js**: A modern front-end build tool that offers a **fast** and **streamlined development experience** for web applications.
+- **React.js**: A popular front-end development JavaScript library for building user interfaces.
+- **Tailwind CSS**: Utility-first CSS framework used for **styling** and **faster development**.
+- **TypeScript**: Provides **type safety**, increasing code efficiency and reducing errors.
+- **React-Slick**: NPM package used to implement a **product auto-slider feature**.
 
-## Expanding the ESLint configuration
+## **Approach**
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Careful analysis** of the Figma design to ensure accurate implementation.
+- Built **one component at a time** to maintain focus and clarity.
+- Used a **reusable code approach** to minimize repetition and enhance readability.
 
-- Configure the top-level `parserOptions` property like this:
+## **Key Features Requirements**
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **Responsive Design**: Ensures the website works seamlessly across all devices with varying screen sizes.
+- **Horizontal Product Scrolling**: Allows users to scroll through products by clicking and dragging.
+- **Click-to-Expand**: Clicking on a product reveals further details.
+- **Form Validation**: Ensures users input a **valid email** and agree to **terms and conditions** via a checkbox.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## **Additional Features Added**
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- **Smooth Auto-Scrolling**: The product carousel auto-scrolls on a timed delay for a smoother user experience.
+- **Submit Button Control**: The submit button remains **disabled** until the user inputs a valid email address and checks the terms and conditions checkbox.
+- **Hover Effects**: Added interactive hover effects to enhance the user interface.
