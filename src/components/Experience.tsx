@@ -1,5 +1,3 @@
-import React from "react";
-
 const Experience = () => {
   return (
     <div className="mt-10 grid gap-16">
