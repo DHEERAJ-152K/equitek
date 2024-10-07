@@ -9,68 +9,36 @@ interface Product {
 }
 
 const Products: React.FC = () => {
-  // Array of products with unique image, title, and description
+  // data for each product card
   const products: Product[] = [
-    {
-      title: "HTC VIVE",
-      imageUrl: "/products/htc-vive.svg",
-    },
-    {
-      title: "HTC VIVE Pro",
-      imageUrl: "/products/htc-vive-pro.svg",
-    },
-    {
-      title: "Oculus Rift",
-      imageUrl: "/products/oculus-rift.svg",
-    },
-    {
-      title: "Playstation VR",
-      imageUrl: "/products/playstation-vr.svg",
-    },
-    {
-      title: "Samsung VR",
-      imageUrl: "/products/samsung-vr.svg",
-    },
+    { title: "HTC VIVE", imageUrl: "/products/htc-vive.svg" },
+    { title: "HTC VIVE Pro", imageUrl: "/products/htc-vive-pro.svg" },
+    { title: "Oculus Rift", imageUrl: "/products/oculus-rift.svg" },
+    { title: "Playstation VR", imageUrl: "/products/playstation-vr.svg" },
+    { title: "Samsung VR", imageUrl: "/products/samsung-vr.svg" },
     {
       title: "HTC Vive Cosmic VR",
       imageUrl: "/products/htc-vive-cosmic-vr.svg",
     },
-    {
-      title: "HP VR",
-      imageUrl: "/products/hp-vr.svg",
-    },
+    { title: "HP VR", imageUrl: "/products/hp-vr.svg" },
   ];
 
-  // Slider configuration
+  // Slider configuration & settings
   const settings: Settings = {
     dots: false,
     arrows: false,
     infinite: true,
-    speed: 1000,
+    speed: 700,
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
     draggable: true,
+    swipeToSlide: true,
     responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
+      { breakpoint: 1024, settings: { slidesToShow: 3 } },
+      { breakpoint: 600, settings: { slidesToShow: 2 } },
+      { breakpoint: 480, settings: { slidesToShow: 2 } },
     ],
   };
 
@@ -95,20 +63,22 @@ const Products: React.FC = () => {
           />
         </svg>
       </h2>
+
+      {/* products auto slider */}
       <Slider {...settings}>
         {products.map((product, index) => (
-          <div key={index} className="p-4">
+          <div key={index} className="p-4 cursor-grabbing ">
             <div className="bg-[#000000] text-white rounded-lg h-[11rem] md:h-[20rem]">
               <img
                 src={product.imageUrl}
                 alt={product.title}
                 className="w-full rounded-t-lg"
               />
-              <h2 className="text-center mt-2 p-2">{product.title}</h2>
-              <p className=" hidden  text-center md:flex w-fit m-auto p-2 ">
+              <h2 className="text-center md:text-xl font-bold mt-2 p-2">{product.title}</h2>
+              <p className=" hidden text-sm  text-center md:flex w-fit m-auto p-2 cursor-pointer ">
                 Learn more
                 <svg
-                  className=" translate-x-4 translate-y-[10px]"
+                  className=" translate-x-1 translate-y-[8.5px]"
                   width="5"
                   height="8"
                   viewBox="0 0 5 8"
@@ -127,6 +97,30 @@ const Products: React.FC = () => {
           </div>
         ))}
       </Slider>
+
+      <svg
+        className="m-auto"
+        width="286"
+        height="8"
+        viewBox="0 0 286 8"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M4 4H283"
+          stroke="white"
+          stroke-width="5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M4 4L68 4"
+          stroke="#8F00FF"
+          stroke-width="7"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
     </div>
   );
 };

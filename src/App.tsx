@@ -9,15 +9,15 @@ import Products from './components/Products';
 
 function App() {
   return (
-    <div>
-      {/* First Background Image for Home, Card */}
+    <div className='w-screen'>
+      {/* First Background Image*/}
       <div className='bg-hero-pattern bg-no-repeat bg-[length:1440px_700px]'>
         <Navbar />
         <Home />
         <Card />
       </div>
 
-      {/* Second Background Image for Products to Footer */}
+      {/* Second Background Image */}
       <div className='bg-footer-pattern bg-cover bg-no-repeat'>
         <Products />
         <Experience />

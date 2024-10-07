@@ -23,6 +23,7 @@ const Experience = () => {
         </svg>
       </h2>
 
+      {/* VR Image */}
       <img className="w-full " src="vr-headset.svg" alt="VR-headset" />
     </div>
   );

@@ -1,31 +1,44 @@
+import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between p-10">
-      <div className="flex gap-[11px]">
+    <nav className="flex justify-between p-10">
+      {/* Logo section */}
+      <div className="flex items-center gap-3">
         <img
-          className=" w-[39px] md:w-[58px] h-[38px] "
+          className="w-[39px] md:w-[58px] h-[38px] cursor-pointer"
           src="/Group4.svg"
-          alt="logo Image"
+          alt="EquiTek logo"
         />
-        <p className=" font-bold w-[58px] h-[19px] translate-y-[4px]  ">
-          EquiTek
-        </p>
+        <p className="font-bold text-lg cursor-pointer">EquiTek</p>
       </div>
 
+      {/* Navigation section */}
       <div>
+        {/* Hamburger icon foor mobile screens */}
         <img
-          className=" w-[23px] h-[12px]  md:hidden translate-y-3"
+          className="w-6 h-3 md:hidden cursor-pointer"
           src="/hamburger.svg"
-          alt=""
+          alt="Menu"
         />
-        <ul className=" hidden md:flex font-normal gap-2 text-lg">
-          <li>Home</li>
-          <li>About us</li>
-          <li>Products</li>
+
+        {/* Navigation links for larger screens */}
+        <ul className="hidden md:flex gap-6 text-lg font-normal">
+          <li className="relative group cursor-pointer">
+            Home
+            <span className="block w-0 h-[4px] bg-offwhite rounded-full transition-all duration-300 group-hover:w-full"></span>
+          </li>
+          <li className="relative group cursor-pointer">
+            About us
+            <span className="block w-0 h-[4px] bg-offwhite rounded-full transition-all duration-300 group-hover:w-full"></span>
+          </li>
+          <li className="relative group cursor-pointer">
+            Products
+            <span className="block w-0 h-[4px] bg-offwhite rounded-full transition-all duration-300 group-hover:w-full"></span>
+          </li>
         </ul>
       </div>
-    </div>
+    </nav>
   );
 };
 

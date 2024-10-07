@@ -15,8 +15,8 @@ export default {
     },
     extend: {
       backgroundImage: {
-        "hero-pattern": "url('/public/Vector1.svg')",
-        'footer-pattern': "url('/public/Vector.svg')",
+        "hero-pattern": "url('/Vector1.svg')",
+        'footer-pattern': "url('/Vector.svg')",
 
         "footer-gradient":
           "linear-gradient(180deg, #4A008F 0%, rgba(74, 0, 143, 0) 100%)",

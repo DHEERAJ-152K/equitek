@@ -1,6 +1,6 @@
 import React from "react";
 
-// Define the data for each card
+// Data for each card
 const cardData = [
   {
     title: "Focus on Innovation",
@@ -28,19 +28,37 @@ const cardData = [
   },
 ];
 
+// Reusable CardItem component
+const CardItem: React.FC<{
+  title: string;
+  description: string;
+  imageSrc: string;
+  bgColor: string;
+  shadowColor: string;
+}> = ({ title, description, imageSrc, bgColor, shadowColor }) => (
+  <div className="grid gap-5 max-w-72">
+    <img
+      className={`rounded-lg p-2 w-12 ${bgColor} ${shadowColor}`}
+      src={imageSrc}
+      alt={title}
+    />
+    <p className="font-bold">{title}</p>
+    <p className=" font-normal">{description}</p>
+  </div>
+);
+
 const Card: React.FC = () => {
   return (
-    <div className="bg-offwhite rounded-l-3xl text-black text-left flex justify-around flex-wrap  py-10 md:ml-10 gap-10">
+    <div className="bg-offwhite  rounded-l-3xl text-black text-left flex justify-around flex-wrap py-10 md:ml-10 md:mr-0 gap-10">
       {cardData.map((card, index) => (
-        <div key={index} className="grid gap-5 max-w-72 ">
-          <img
-            className={`rounded-lg p-2 w-12 ${card.bgColor} ${card.shadowColor}`}
-            src={card.imageSrc}
-            alt="icon"
-          />
-          <p className="font-bold">{card.title}</p>
-          <p className="font-normal">{card.description}</p>
-        </div>
+        <CardItem
+          key={index}
+          title={card.title}
+          description={card.description}
+          imageSrc={card.imageSrc}
+          bgColor={card.bgColor}
+          shadowColor={card.shadowColor}
+        />
       ))}
     </div>
   );
