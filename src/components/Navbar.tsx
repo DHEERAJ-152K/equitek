@@ -1,7 +1,7 @@
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between p-10">
+    <nav className="flex justify-between py-10 px-5 ">
       {/* Logo section */}
       <div className="flex items-center gap-3">
         <img
@@ -16,7 +16,7 @@ const Navbar = () => {
       <div>
         {/* Hamburger icon foor mobile screens */}
         <img
-          className="w-6 h-3 md:hidden cursor-pointer"
+          className="w-6 h-3 md:hidden cursor-pointer translate-y-3"
           src="/hamburger.svg"
           alt="Menu"
         />

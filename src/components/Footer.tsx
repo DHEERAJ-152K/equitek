@@ -42,7 +42,7 @@ const Footer = () => {
             alt="Profile"
           />
           <h2 className="font-bold text-base md:text-lg">Jonathan Vader</h2>
-          <p className="font-normal text-sm md:text-lg">
+          <p className="font-normal text-sm md:text-base">
             Hello, EquiTek is a personal blog created by me for tech enthusiasts
             and people looking to buy the latest Tech. I am a VR Games Developer
             who loves to create immersive experiences. You can visit my personal
@@ -57,7 +57,7 @@ const Footer = () => {
 
          {/* breakpoint */}
          <svg
-          className="md:hidden"
+          className="md:hidden m-auto"
           width="294"
           height="2"
           viewBox="0 0 294 2"
@@ -81,11 +81,11 @@ const Footer = () => {
 
         {/* Mailing section */}
         <div className="grid gap-5 md:w-5/12">
-          <h2 className="font-bold text-lg md:text-2xl text-center">
+          <h2 className="font-bold text-lg md:text-2xl text-center md:text-left">
             MAILING LIST
           </h2>
-          <p className="font-normal text-sm md:text-lg">
-            Sign up to stay updated on the latest posts and offers.
+          <p className="font-normal text-sm md:text-lg md:text-left">
+          Sign up to the mailing list and stay updated on the latest posts and offers
           </p>
 
           {/* Form */}
@@ -175,7 +175,7 @@ const Footer = () => {
 
       <div className="m-auto md:w-3/12">
       <svg
-          className="md:hidden"
+          className="md:hidden m-auto"
           width="294"
           height="2"
           viewBox="0 0 294 2"

@@ -49,7 +49,7 @@ const CardItem: React.FC<{
 
 const Card: React.FC = () => {
   return (
-    <div className="bg-offwhite rounded-l-3xl text-black text-left flex justify-around flex-wrap py-10 md:ml-10 gap-10">
+    <div className="bg-offwhite rounded-l-3xl text-black text-left flex justify-around flex-wrap py-10 md:ml-10 mt-10 md:mt-0 gap-10">
       {cardData.map((card, index) => (
         <CardItem
           key={index}

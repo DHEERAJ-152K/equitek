@@ -79,11 +79,11 @@ const Explore = () => {
           </div>
 
           {/* More about EquiTek Section */}
-          <div className="grid gap-10">
-            <h2 className="text-xl md:text-3xl font-bold">
+          <div className="grid gap-10 md:px-16">
+            <h2 className="text-lg md:text-left md:text-3xl font-bold">
               More about EquiTek!
               <svg
-                className="m-auto"
+                className="m-auto md:hidden"
                 width="111"
                 height="4"
                 viewBox="0 0 111 4"
@@ -95,7 +95,7 @@ const Explore = () => {
             </h2>
 
             {/* Cards with Details */}
-            <div className="grid md:grid-cols-3 text-left gap-5 md:px-16">
+            <div className="grid md:grid-cols-3 text-left gap-5 ">
               {equitekDetails.map((detail) => (
                 <div
                   key={detail.title}
