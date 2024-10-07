@@ -38,14 +38,14 @@ const Explore = () => {
   ];
 
   return (
-    <div className="mt-10">
+    <div className="mt-10 ">
       {/* Explore More Button */}
       {!isVisible && (
         <p
           onClick={handleComponent}
-          className="m-auto w-64 p-2 bg-blue border-[1px] border-dashed rounded-md font-normal cursor-pointer cursor-pointer"
+          className="m-auto mt-16 w-64 p-2 bg-blue border-[1px] border-dashed rounded-md font-normal cursor-pointer"
         >
-          Explore More.
+          Explore More
         </p>
       )}
 
@@ -53,7 +53,7 @@ const Explore = () => {
       {isVisible && (
         <div id="explore" className="mt-10 grid place-items-center mx-5 gap-16 md:gap-20">
           {/* Explore Possibilities Section */}
-          <div className="w-full md:max-w-[50rem] grid py-5 shadow-whiteShadow rounded-xl gap-2">
+          <div className="bg-[#2B2044] w-full md:max-w-[50rem] grid py-5 shadow-whiteShadow rounded-xl gap-2">
             <h2 className="font-bold text-base md:text-3xl">Explore Possibilities</h2>
             <p className="text-sm md:text-xl w-[14rem] md:w-full m-auto">
               Unlock New Dimensions through Tech and Virtual Reality

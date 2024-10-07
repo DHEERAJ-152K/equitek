@@ -5,7 +5,7 @@ const Home = () => {
     <div className="mt-10 md:mt-0 grid grid-cols-1 md:mx-10">
       {/* Title and description */}
       <div className="grid md:w-1/3 gap-5">
-        <p className="text-left font-bold text-3xl md:text-[2.5rem] m-auto md:m-0">The Next Big Thing!</p>
+        <p className="text-left font-bold text-3xl md:text-[2.6rem] m-auto md:m-0">The Next Big Thing!</p>
         <p className="md:text-left opacity-60 font-normal text-[1rem] md:text-[1.5rem] w-[70%] md:w-auto m-auto">
           Join us in our journey to find out how the world of VR is evolving.
         </p>
@@ -14,7 +14,7 @@ const Home = () => {
       {/* Image and button section */}
       <div className="flex flex-col-reverse md:flex-row md:w-full ">
         {/* "Know More" Button */}
-        <button className="bg-blue rounded-md w-[8.8rem] py-2 border-2 border-dashed font-medium text-sm text-center mx-auto mb-5 md:absolute md:translate-y-10">
+        <button className="bg-blue rounded-md w-[8.7rem] py-2 border-2 border-dashed font-medium text-base text-center mx-auto mb-5 md:absolute md:translate-y-10">
           Know More
         </button>
 

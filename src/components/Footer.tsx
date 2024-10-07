@@ -114,7 +114,7 @@ const Footer = () => {
 
             <label className="flex items-start ">
               <input
-                className="mt-1"
+                className="mt-1 bg-transparent"
                 type="checkbox"
                 checked={isAgreed}
                 onChange={() => setIsAgreed(!isAgreed)}
@@ -129,7 +129,7 @@ const Footer = () => {
 
             <label className="flex items-start">
               <input
-                className="mt-1"
+                className="mt-1 bg-transparent"
                 type="checkbox"
                 checked={isThirdPartyAllowed}
                 onChange={() => setIsThirdPartyAllowed(!isThirdPartyAllowed)}
@@ -140,7 +140,7 @@ const Footer = () => {
                 </p>
                 <i className="text-xs">(optional)</i>
                 <p className="text-sm">
-                  I consent to my email being shared with selected partners.
+                I consent to my email being shared with selected partners for offers and promotions.
                 </p>
               </span>
             </label>

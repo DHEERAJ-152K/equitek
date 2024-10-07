@@ -9,7 +9,7 @@ import Products from './components/Products';
 
 function App() {
   return (
-    <div className='w-screen'>
+    <div >
       {/* First Background Image*/}
       <div className='bg-hero-pattern bg-no-repeat bg-[length:1440px_700px]'>
         <Navbar />
@@ -18,7 +18,7 @@ function App() {
       </div>
 
       {/* Second Background Image */}
-      <div className='bg-footer-pattern bg-cover bg-no-repeat'>
+      <div className='bg-footer-pattern bg-cover bg-center'>
         <Products />
         <Experience />
         <Explore />

@@ -6,11 +6,11 @@ const Navbar = () => {
       {/* Logo section */}
       <div className="flex items-center gap-3">
         <img
-          className="w-[39px] md:w-[58px] h-[38px] cursor-pointer"
+          className="w-[39px] h-[38px] cursor-pointer"
           src="/Group4.svg"
           alt="EquiTek logo"
         />
-        <p className="font-bold text-lg cursor-pointer">EquiTek</p>
+        <p className="font-bold  text-lg  cursor-pointer">EquiTek</p>
       </div>
 
       {/* Navigation section */}
@@ -23,7 +23,7 @@ const Navbar = () => {
         />
 
         {/* Navigation links for larger screens */}
-        <ul className="hidden md:flex gap-6 text-lg font-normal">
+        <ul className="hidden md:flex gap-6 text-base font-normal">
           <li className="relative group cursor-pointer">
             Home
             <span className="block w-0 h-[4px] bg-offwhite rounded-full transition-all duration-300 group-hover:w-full"></span>

@@ -43,21 +43,20 @@ const Products: React.FC = () => {
   };
 
   return (
-    <div className="mt-10 ">
-      <h2 className="font-bold w-fit m-5 text-lg text-start ">
+    <div className="mt-10 mx-2 ">
+      <h2 className="font-bold w-fit m-5 text-2xl text-start ">
         Products
         <svg
-          className=" translate-x-2"
-          width="63"
-          height="4"
-          viewBox="0 0 63 4"
+          width="101"
+          height="6"
+          viewBox="0 0 101 6"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M2 2H61"
+            d="M3 3H98.5"
             stroke="white"
-            stroke-width="3"
+            stroke-width="5"
             stroke-linecap="round"
             stroke-linejoin="round"
           />
@@ -74,7 +73,9 @@ const Products: React.FC = () => {
                 alt={product.title}
                 className="w-full rounded-t-lg"
               />
-              <h2 className="text-center md:text-xl font-bold mt-2 p-2">{product.title}</h2>
+              <h2 className="text-center md:text-xl font-bold mt-2 p-2">
+                {product.title}
+              </h2>
               <p className=" hidden text-sm  text-center md:flex w-fit m-auto p-2 cursor-pointer ">
                 Learn more
                 <svg
@@ -99,7 +100,7 @@ const Products: React.FC = () => {
       </Slider>
 
       <svg
-        className="m-auto"
+        className="m-auto mt-10"
         width="286"
         height="8"
         viewBox="0 0 286 8"
