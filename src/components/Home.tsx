@@ -13,7 +13,7 @@ const Home = () => {
       {/* Image and button section */}
       <div className="flex flex-col-reverse md:flex-row md:w-full ">
         {/* "Know More" Button */}
-        <button className="bg-blue rounded-md w-[8.7rem] py-2 border-2 border-dashed font-medium text-base text-center mx-auto mb-5 md:absolute md:translate-y-10">
+        <button className="bg-blue rounded-md w-[8.7rem] py-2 border border-dashed font-medium text-base text-center mx-auto mb-5 md:absolute md:translate-y-10">
           Know More
         </button>
 
