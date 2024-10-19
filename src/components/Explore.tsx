@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const Explore = () => {
-  const [picture, setPicture] = useState<string>("Gaming.svg");
+  const [picture, setPicture] = useState<string>("Gaming.jpg");
   const [isVisible, setVisible] = useState<boolean>(false);
 
   // Toggles the visibility of the content
@@ -9,10 +9,10 @@ const Explore = () => {
 
   // Data for categories to avoid repetition
   const categories = [
-    { name: "Sci-Fi", img: "Sci-fi.svg" },
-    { name: "Nature", img: "nature.svg" },
-    { name: "Gaming", img: "Gaming.svg" },
-    { name: "Drive", img: "driving.svg" },
+    { name: "Sci-Fi", img: "Sci-fi.jpg" },
+    { name: "Nature", img: "nature.jpg" },
+    { name: "Gaming", img: "Gaming.jpg" },
+    { name: "Drive", img: "driving.jpg" },
   ];
 
   // Data for "More about EquiTek" sections
